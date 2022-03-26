@@ -1,0 +1,230 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferando auf Wish bestellt</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile-style.css">
+    <script src="script-lösungen.js"></script>
+</head>
+<body id="body" onload="load()">
+  <header id="header">
+        
+
+    <div class="logo align-items" id="logo">
+        <a href="#" class="material-icons-outlined">
+            arrow_back_ios_new
+        </a>
+         <a href="#" class="material-icons-outlined bigger">
+            restaurant_menu
+         </a>
+        <a href="#" class="logo-text hide-mobile">Lieferdienst</a>
+    </div>
+
+        <a href="#" class="location"> Bahnhofstraße 1, 93059 Regensburg </a>
+           
+    <div class="menu align-items" id="menu">
+        <a href="#"><img src="img/header-flag.png" class="flag-icon hide-mobile"></a> 
+        <a href="#" class="material-icons-round-menu">menu</a>
+    </div>
+
+  </header>
+
+<section class="content">       
+    <main id="main">
+        <div class="main-img">
+            <div class="wish-container">
+                <img src="img/Pizzawish.png">
+            </div>
+        </div>
+<div class="food-list-parent">
+    <div class="restaurant-container" id="restaurant-container">
+
+        <div class="restaurant">
+          <div class="headline">
+                <h1>Pizzeria Wish</h1>
+          </div>
+          <div class="rating">
+            <span class="material-icons-round star">
+                star
+            </span>
+            <span class="material-icons-round star">
+                star
+            </span>
+            <span class="material-icons-round star">
+                star
+            </span>
+            <span class="material-icons-round star">
+                 star
+            </span>
+            <span class="material-icons-round star">
+                star_half
+            </span>
+              <a href="#" class="reviews">(1337 Bewertungen)</a>
+          </div>
+        </div>
+        <div class="icons-restaurant">
+                <a href="#" class="material-icons-outlined info">
+                    info
+                </a>
+                <a href="#" class="material-icons-outlined heart">
+                    favorite_border
+                </a>
+        </div>
+    </div>
+<div class="navbar-padding">
+    <div class="navbar">
+
+        <div class="navbar-search">
+            <a href="#" class="material-icons-round search-icon">
+                search
+            </a>
+        </div>
+        
+        <div class="categories">
+            <a href="#">Beliebte Gerichte</a>
+            <a href="#">Insalate</a>
+            <a href="#">Pizza</a>
+            <a href="#">Pizza Special</a>
+            <a href="#">Pasta</a>
+            <a href="#">Pasta Special</a>
+            <a href="#">Döner</a>
+            <a href="#">Burger</a>
+            <a href="#">Dessert</a>
+            <a href="#">Geränke</a>
+        </div>        
+        
+    </div>
+</div>
+  
+<div class="food-list" id="food-list">
+    <div class="food-title" id="food-title">
+            <h2>Beliebte Gerichte</h2>
+    </div>
+        <div class="food-container" id="food-container" 
+        onclick="addToBasket('Pizza Diavola [Ø 32cm]', 'mit scharfer Salami und Zwiebeln', 7.90 )">
+            <div class="product-container" id="product-container">
+                <h2 id="product(0)">Pizza Diavola [Ø 32cm]</h2> <a href="#" class="product-info">Produktinfo</a> 
+            </div>
+            <div class="description" id="description(0)">mit scharfer Salami und Zwiebeln</div>
+            <div class="price" id="price(0)">7,90€</div>
+            <button  class="add material-icons-outlined">add</button>
+        </div>
+        <div class="food-container" id="food-container" 
+        onclick="addToBasket('Pizza Prosciutto [Ø 32cm]', 'mit Kochhinterschinken', 6.90 )">
+            <div class="product-container" id="product-container">
+                <h2 id="product(1)">Pizza Prosciutto [Ø 32cm] </h2> <a href="#" class="product-info">Produktinfo</a> 
+            </div>
+            <div class="description" id="description(1)">mit Kochhinterschinken</div>
+            <div class="price" id="price(1)">6,90€</div>
+            <button  class="add material-icons-outlined">add</button>
+        </div>
+        <div class="food-container" id="food-container" 
+        onclick="addToBasket('Pizza Funghi [Ø 32cm]', 'mit Kochhinterschinken und Champignons', 7.90 )">
+            <div class="product-container" id="product-container">
+                <h2 id="product(2)">Pizza Funghi [Ø 32cm]</h2> <a href="#" class="product-info">Produktinfo</a> 
+            </div>
+            <div class="description" id="description(2)">mit Kochhinterschinken und Champignons</div>
+            <div class="price" id="price(2)">7,90€</div>
+            <button  class="add material-icons-outlined">add</button>
+        </div>
+    </div>
+
+ 
+<div class="food-list" id="food-list">
+    <div class="food-title" id="food-title">
+            <h2>Pizza</h2><br>
+            <p class="food-description">Alle Pizzen werden mit Tomatensauce und Käse zubereitet.</p>
+    </div>
+        <div class="food-container" id="food-container" 
+        onclick="addToBasket('Pizza Margharita [Ø 32cm]', 'mit Mozzarella', 5.90 )">
+            <div class="product-container" id="product-container">
+                <h2 id="product(3)">Pizza Margharita [Ø 32cm]</h2> <a href="#" class="product-info">Produktinfo</a> 
+            </div>
+            <div class="description" id="description(3)">mit Mozzarella</div>
+            <div class="price" id="price(3)">5,90€</div>
+            <button  class="add material-icons-outlined">add</button>
+        </div>
+        <div class="food-container" id="food-container" 
+        onclick="addToBasket('Pizza Prosciutto [Ø 32cm]', 'mit Kochhinterschinken', 6.90 )">
+            <div class="product-container" id="product-container">
+                <h2 id="product(1)">Pizza Prosciutto [Ø 32cm]</h2> <a href="#" class="product-info">Produktinfo</a> 
+            </div>
+            <div class="description" id="description(1)">mit Kochhinterschinken</div>
+            <div class="price" id="price(1)">6,90€</div>
+            <button  class="add material-icons-outlined">add</button>
+        </div>
+        <div class="food-container" id="food-container" 
+        onclick="addToBasket('Pizza Salami [Ø 32cm]', 'mit Salami', 6.90 )">
+            <div class="product-container" id="product-container">
+                <h2 id="product(4)">Pizza Salami [Ø 32cm]</h2> <a href="#" class="product-info">Produktinfo</a> 
+            </div>
+            <div class="description" id="description(4)"> mit Salami(3)</div>
+            <div  class="price" id="price(4)">6,90€</div>
+            <button  class="add material-icons-outlined">add</button>
+        </div>
+    </div>
+</div>
+
+<div class="imprint" id="imprint">
+    <h3>Impressum</h3>
+    <p>
+        Bei Lieferando auf Wish bestellt und der Pizzaria Wish handelt es sich um fiktive Unternehmen,
+        die Website wurde zu Übungszwecken erstellt.
+        Hierbei handelt es sich um ein Kunstwerk, welches der Fantasie des Entwicklers entsprungen ist. <br>
+    </p>
+        <a href="#">Plattform der EU-Kommission zur Online-Streitbeilegung</a>
+</div>
+</div>
+
+</main>
+
+<aside class="sidebar hide-mobile" id="sidebar">
+
+    <div class="basket" id="basket"> <h2>Warenkorb</h2> </div>  
+    <div class="basket-container" id="basket-container">
+    </div>  
+
+    <div class="price-calc-container" id="price-calc-container">
+    </div>  
+     
+
+    
+</aside>
+
+</section> 
+    
+    <div class="footer-container" id="footer-container">
+
+        <div class="footer-links" id="footer-links">
+           <a href="#"> Ein Restaurant empfehlen </a>
+           <a href="#"> Ein Restaurant anmelden </a>
+           <a href="#"> Jobs </a>
+           <a href="#"> AGB </a>
+           <a href="#"> Datenschutzerklärung </a>
+           <a href="#"> Impressum </a>
+           <a href="#"> Verwendung von Cookies </a>
+           <a href="#"> Bug Bounty </a>
+           <a href="#"> Ethik-Hotline </a>
+        </div>
+
+        <div class="footer-copyright" id="footer-copyright">
+            © 2022 Developer Akademie
+        </div>
+        
+    </div>
+    <div class="mobile-button-container" id="mobile-button-container">
+    </div>
+
+    
+
+</body>
+</html>
