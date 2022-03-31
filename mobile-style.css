@@ -1,4 +1,21 @@
 @media(max-width: 1000px) {
+    .close-btn {
+        position: sticky;
+        left: 26%;
+        align-items: center;
+        color: white;
+        background-color: #146eeb;
+        border-radius: 3px;
+        font-size: 12px;
+        font-weight: 500;
+        min-height: 32px;
+        width: 48%;
+    }
+
+    .close-btn:hover {
+        cursor: pointer;
+    }
+
     .hide-mobile {
         display: none;
     }
@@ -110,7 +127,7 @@
         font-size: 10px;
     }
 
-    .food-list{
+    .food-list {
         padding: 0 !important;
     }
 
@@ -128,7 +145,7 @@
         padding: 10px 12px;
         overflow-y: hidden;
     }
-    
+
     .navbar::-webkit-scrollbar {
         display: none;
     }
@@ -138,7 +155,7 @@
         padding: 8px;
     }
 
-    .navbar-padding{
+    .navbar-padding {
         padding: 12px 0px
     }
 
@@ -174,16 +191,4 @@
         text-align: center;
     }
 
-    .close-btn{
-        position: sticky;
-        left: 26%;
-        align-items: center;
-        color: white;
-        background-color: #146eeb;
-        border-radius: 3px;
-        font-size: 12px;
-        font-weight: 500;
-        min-height: 32px;
-        width: 48%;
-    }
 }

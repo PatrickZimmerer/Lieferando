@@ -151,7 +151,6 @@ function totalSum(sum) {
 					.toFixed(2)
 					.replace(".", ",")}€) </button>`;
 }
-function showMobileBasket() {}
 // Wandelt die Arrays zu text um um sie im localStorage zu speichern
 function save() {
 	let productsAsText = JSON.stringify(products);
